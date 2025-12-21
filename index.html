@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools of Technologies (TOT)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green-main:#2f5f4a;
+  --green-soft:#6f9f8a;
+  --green-light:#cfe3d8;
+  --bg-main:#f6f7f4;
+  --glass:rgba(47,95,74,0.08);
+  --line:rgba(47,95,74,0.35);
+  --text-dark:#1f2d26;
+}
+
+/* RESET */
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+
+/* BODY */
+body{
+  margin:0;
+  font-family:Orbitron,Arial,sans-serif;
+  color:var(--text-dark);
+  background:
+    radial-gradient(circle at center, rgba(111,159,138,0.25), transparent 55%),
+    linear-gradient(180deg, #ffffff, var(--bg-main));
+  overflow-x:hidden;
+}
+
+/* SUBTLE GRID FLOOR */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(47,95,74,0.08) 0px,
+      rgba(47,95,74,0.08) 1px,
+      transparent 1px,
+      transparent 42px
+    );
+  z-index:-1;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(246,247,244,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.navbar ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin:0;
+  padding:18px;
+}
+.navbar a{
+  color:var(--green-main);
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:.22em;
+  transition:.3s;
+}
+.navbar a:hover{
+  color:#000;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero-title{
+  font-size:64px;
+  letter-spacing:.35em;
+  font-weight:700;
+  color:var(--green-main);
+  animation:fadeUp 1.4s ease;
+  position:relative;
+}
+
+/* SECTIONS */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:90px 20px;
+}
+h2{
+  font-size:30px;
+  letter-spacing:.22em;
+  margin-bottom:30px;
+  color:var(--green-main);
+}
+p{
+  font-size:16px;
+  line-height:1.9em;
+  color:#344b40;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:34px;
+  margin-top:50px;
+}
+
+/* CARDS */
+.card{
+  background:rgba(255,255,255,.75);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:30px;
+  transition:.35s ease;
+  position:relative;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 30px rgba(47,95,74,.18);
+}
+
+.card h3{
+  font-size:17px;
+  letter-spacing:.14em;
+  margin-bottom:14px;
+  color:var(--green-main);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  border-top:1px solid var(--line);
+  background:rgba(246,247,244,.9);
+  font-size:14px;
+  color:#4a6b5c;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(24px)}
+  to{opacity:1; transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<ul>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#products">PRODUCTS</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-title">TOOLS OF TECHNOLOGIES</div>
+</div>
+
+<section id="about">
+<h2>ABOUT US</h2>
+<p>
+<strong>Tools of Technologies (TOT)</strong> builds algorithmic tools,
+automation systems, and execution infrastructure for Forex,
+Crypto, and Indian markets.
+<br><br>
+We focus on software & logic —
+<strong>not trading services, signals, or financial advice</strong>.
+</p>
+</section>
+
+<section id="services">
+<h2>SERVICES</h2>
+<div class="grid">
+<div class="card"><h3>Algo Software Development</h3><p>Custom algorithmic logic & automation tools.</p></div>
+<div class="card"><h3>Automation Systems</h3><p>Rule-based execution & risk control frameworks.</p></div>
+<div class="card"><h3>Strategy Logic Engineering</h3><p>Trend, structure & price-action systems.</p></div>
+<div class="card"><h3>Custom Market Tools</h3><p>Private bots, utilities & research tools.</p></div>
+</div>
+</section>
+
+<section id="products">
+<h2>PRODUCT CATALOGUE</h2>
+<div class="grid">
+<div class="card"><h3>Algo Development Services</h3><p>Tailor-made algorithmic systems.</p></div>
+<div class="card"><h3>Market Coverage</h3><p>F&O • Equity • Commodity • Forex • Indian Markets</p></div>
+<div class="card"><h3>Strategy Types</h3><p>Breakouts • S/R • Price Action • Trend Following</p></div>
+<div class="card"><h3>Advanced Logic Modules</h3><p>Indicators • Scalping • Arbitrage • Expiry Logic</p></div>
+<div class="card"><h3>Platform Support</h3><p>MT4 / MT5 • TradingView • Python • ChartInk</p></div>
+<div class="card"><h3>API & Execution Tools</h3><p>Broker APIs • Automation • Infrastructure</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>CONTACT</h2>
+<p>📩 Email: <strong>contact@toolsoftechnologies.com</strong></p>
+</section>
+
+<footer>
+© 2025 Tools of Technologies (TOT)
+</footer>
+
+</body>
+</html>
