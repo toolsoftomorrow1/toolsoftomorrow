@@ -79,32 +79,31 @@ body::before{
   text-align:center;
 }
 
-/* TOT LOGO TEXT */
+/* LOGO TEXT */
 .hero-title{
   display:flex;
   justify-content:center;
-  align-items:center;
-  gap:56px;
+  align-items:flex-start;
   font-size:96px;
   font-weight:700;
-  letter-spacing:.15em;
   color:var(--green-main);
 }
 
-/* EACH LETTER */
-.hero-title span{
+/* EACH LETTER FIXED WIDTH */
+.letter{
+  width:120px;
+  text-align:center;
   position:relative;
-  display:inline-block;
 }
 
-/* TAGLINE UNDER O */
+/* TAGLINE UNDER O ONLY */
 .hero-tagline{
   position:absolute;
   top:100%;
   left:50%;
   transform:translateX(-50%);
   margin-top:12px;
-  font-size:8px;              /* ~90% smaller */
+  font-size:8px;              /* micro size */
   letter-spacing:.6em;
   font-weight:500;
   color:var(--green-soft);
@@ -183,12 +182,14 @@ footer{
 <!-- HERO -->
 <div class="hero">
   <div class="hero-title">
-    <span>T</span>
-    <span>
+    <div class="letter">T</div>
+
+    <div class="letter">
       O
-      <span class="hero-tagline">TOOLS OF TOMORROW</span>
-    </span>
-    <span>T</span>
+      <div class="hero-tagline">TOOLS OF TOMORROW</div>
+    </div>
+
+    <div class="letter">T</div>
   </div>
 </div>
 
