@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TOT — Tools of Tomorrow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&lt;TOT&gt; — Tools of Tomorrow</title>
 
-<!-- MONO FONT -->
+<!-- MONOSPACE CODE FONT -->
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* =====================
-   COLOR SYSTEM
-===================== */
+/* =========================
+   BRAND COLOR SYSTEM
+========================= */
 :root{
   --bg:#0E3B2E;
   --tot:#3DB4FF;
   --name:#FF9F1C;
   --algo:#9D7CFF;
   --auto:#FFD166;
-  --muted:#9FBFB5;
+  --text:#9FBFB5;
+  --border:rgba(255,255,255,.12);
 }
 
 /* RESET */
@@ -29,16 +30,16 @@ html{scroll-behavior:smooth}
 body{
   font-family:'JetBrains Mono', monospace;
   background:var(--bg);
-  color:var(--muted);
+  color:var(--text);
 }
 
-/* NAV */
+/* NAVBAR */
 nav{
   position:sticky;
   top:0;
   background:rgba(14,59,46,.9);
   backdrop-filter:blur(8px);
-  border-bottom:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid var(--border);
 }
 nav ul{
   list-style:none;
@@ -48,15 +49,15 @@ nav ul{
   padding:18px;
 }
 nav a{
+  color:var(--text);
   text-decoration:none;
-  color:var(--muted);
   font-size:11px;
   letter-spacing:.28em;
 }
 
 /* HERO */
 .hero{
-  min-height:90vh;
+  min-height:92vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -66,7 +67,7 @@ nav a{
   font-size:72px;
   color:var(--tot);
   font-weight:600;
-  letter-spacing:.08em;
+  letter-spacing:.1em;
 }
 .hero h2{
   font-size:14px;
@@ -82,15 +83,15 @@ nav a{
 .hero p span:nth-child(1){color:var(--algo)}
 .hero p span:nth-child(2){color:var(--auto)}
 
-/* SECTION */
+/* SECTIONS */
 section{
   max-width:1100px;
   margin:auto;
-  padding:80px 20px;
+  padding:90px 20px;
 }
 section h3{
   font-size:22px;
-  margin-bottom:24px;
+  margin-bottom:28px;
   color:var(--tot);
   letter-spacing:.18em;
 }
@@ -102,31 +103,49 @@ section p{
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:28px;
-  margin-top:36px;
+  margin-top:40px;
 }
 
-/* CARD */
+/* CODE STYLE CARDS */
 .card{
-  border:1px solid rgba(255,255,255,.08);
-  padding:28px;
+  position:relative;
+  background:rgba(0,0,0,.18);
+  border:1px solid var(--border);
+  padding:26px 28px 26px 34px;
+  transition:.25s ease;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:4px;
+  background:var(--tot);
+  opacity:.6;
 }
 .card h4{
-  font-size:15px;
-  margin-bottom:12px;
+  font-size:14px;
+  margin-bottom:10px;
   color:var(--name);
 }
 .card p{
   font-size:13px;
+  line-height:1.8em;
+}
+.card:hover{
+  border-color:var(--tot);
+  background:rgba(0,0,0,.28);
 }
 
 /* FOOTER */
 footer{
   text-align:center;
   padding:40px;
+  border-top:1px solid var(--border);
   font-size:12px;
-  border-top:1px solid rgba(255,255,255,.06);
 }
 </style>
 </head>
@@ -161,10 +180,10 @@ footer{
 <section id="about">
 <h3>ABOUT</h3>
 <p>
-TOT builds <strong>algorithmic logic</strong> and <strong>automation systems</strong>
-for trading and execution workflows.
+&lt;TOT&gt; builds <strong>algorithmic logic</strong> and
+<strong>automation systems</strong> for trading workflows.
 <br><br>
-We focus on software engineering & system logic —
+We focus on software & systems —
 <strong>not tips, signals, or financial advice.</strong>
 </p>
 </section>
@@ -173,10 +192,43 @@ We focus on software engineering & system logic —
 <section id="services">
 <h3>SERVICES</h3>
 <div class="grid">
-  <div class="card"><h4>Algo Logic Development</h4><p>Custom rule-based algorithm systems.</p></div>
-  <div class="card"><h4>Automation Frameworks</h4><p>Execution, risk & workflow automation.</p></div>
-  <div class="card"><h4>Strategy Engineering</h4><p>Trend, structure & price-action logic.</p></div>
-  <div class="card"><h4>Private Tools</h4><p>Research utilities & internal systems.</p></div>
+
+  <div class="card">
+    <h4>// Algo_Software_Development</h4>
+    <p>
+      custom_algorithmic_logic()<br>
+      rule_based_execution()<br>
+      risk_control_frameworks()
+    </p>
+  </div>
+
+  <div class="card">
+    <h4>// Automation_Systems</h4>
+    <p>
+      execution_automation()<br>
+      workflow_scheduling()<br>
+      error_handling_modules()
+    </p>
+  </div>
+
+  <div class="card">
+    <h4>// Strategy_Logic_Engineering</h4>
+    <p>
+      trend_following_models()<br>
+      support_resistance_logic()<br>
+      price_action_structures()
+    </p>
+  </div>
+
+  <div class="card">
+    <h4>// Custom_Market_Tools</h4>
+    <p>
+      internal_research_tools()<br>
+      private_utilities()<br>
+      data_helpers()
+    </p>
+  </div>
+
 </div>
 </section>
 
@@ -184,18 +236,53 @@ We focus on software engineering & system logic —
 <section id="products">
 <h3>PRODUCTS</h3>
 <div class="grid">
-  <div class="card"><h4>Algo Software</h4><p>Forex • Crypto • Indian markets</p></div>
-  <div class="card"><h4>Execution Tools</h4><p>Automation & logic modules</p></div>
-  <div class="card"><h4>Platforms</h4><p>MT4 • MT5 • TradingView • Python</p></div>
+
+  <div class="card">
+    <h4>// Market_Coverage</h4>
+    <p>
+      equity()<br>
+      fno()<br>
+      commodity()<br>
+      forex()
+    </p>
+  </div>
+
+  <div class="card">
+    <h4>// Strategy_Types</h4>
+    <p>
+      breakout_systems()<br>
+      trend_continuation()<br>
+      range_logic()<br>
+      expiry_models()
+    </p>
+  </div>
+
+  <div class="card">
+    <h4>// Platform_Support</h4>
+    <p>
+      mt4_mt5()<br>
+      tradingview()<br>
+      python()<br>
+      chartink()
+    </p>
+  </div>
+
+  <div class="card">
+    <h4>// Execution_Modules</h4>
+    <p>
+      order_management()<br>
+      api_integration()<br>
+      automation_layers()
+    </p>
+  </div>
+
 </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
 <h3>CONTACT</h3>
-<p>
-Email: <strong>contact@toolsoftomorrow.dev</strong>
-</p>
+<p>Email: <strong>contact@toolsoftomorrow.dev</strong></p>
 </section>
 
 <footer>
