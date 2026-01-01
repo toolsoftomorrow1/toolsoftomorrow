@@ -2,29 +2,100 @@
 
 Algorithmic Market Tools & Automation
 
-We design and develop algorithmic tools, research systems, and automation
-infrastructure for financial markets.
+We design and develop **custom algorithmic systems**, research tools,
+and automation infrastructure for financial markets.
+
+Our work focuses on **logic engineering, execution flow, and system reliability** —
+not on selling trading results.
+
+---
 
 ## Focus Areas
-- MT5 Expert Advisor development (logic & automation)
-- Crypto and Forex market research tools
-- Risk-aware system design
-- Strategy testing and optimization frameworks
+
+- TradingView indicator & strategy logic development  
+- MT5 Expert Advisor development (rule-based automation)
+- API-based execution systems (TradingView → Backend → Broker)
+- Risk-aware system architecture
+- Strategy testing, validation, and optimization frameworks
+- Licensing, access control, and deployment workflows
+
+---
+
+## System Demonstrations
+
+Below are **internal system demonstrations** built to showcase  
+execution flow, automation quality, and logic structuring.
+
+> These are **NOT live client systems**  
+> and **do NOT represent performance or profit guarantees**.
+
+### 1. TradingView → API Execution System
+Demonstrates:
+- TradingView signal generation
+- Backend validation & rule checks
+- Broker API execution flow
+- Order logging & safety controls
+
+*(Screenshot placeholder)*
+
+---
+
+### 2. MT5 Rule-Based EA (Demo Environment)
+Demonstrates:
+- Structured entry/exit rules
+- Risk management handling
+- Demo-only execution logic
+
+*(Screenshot placeholder)*
+
+---
+
+### 3. TradingView Custom Indicator (Logic Demo)
+Demonstrates:
+- Custom condition filtering
+- Trend & strength validation
+- Visual trade-state labeling (BUY / EXIT)
+
+*(Screenshot placeholder)*
+
+---
 
 ## Important Notice
-Tools of Technologies does not provide:
+
+Tools of Technologies **does NOT provide**:
 - Trading services
 - Buy/Sell signals
 - Fund management
 - Financial or investment advice
 
-All projects are intended for research, development, testing,
-and educational purposes only.
+All projects are created for:
+- System development
+- Logic validation
+- Automation testing
+- Research & educational purposes
 
-## Projects
-- XRP Continuation Pyramid EA (MT5 – logic framework)
-- EMA-based Trend Systems
-- Risk-controlled algorithmic modules
+Final implementations are built **privately per client**
+based on their specific requirements.
+
+---
+
+## Sample Project Frameworks
+
+- EMA-based Trend Logic Systems  
+- Rule-based Scalping & Intraday Structures  
+- Risk-controlled algorithmic modules  
+- Strategy-to-execution automation pipelines  
+
+*(Project names are representative of logic structure, not live products.)*
+
+---
 
 ## GitHub Pages
-Official website coming soon 🚀
+
+This repository is used to demonstrate **system architecture and execution flow only**.
+
+Live deployments, proprietary logic, and client-specific systems
+are **never shared publicly**.
+
+Official website:  
+👉 https://toolsoftomorrow1.github.io/toolsoftomorrow/
