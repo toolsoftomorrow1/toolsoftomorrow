@@ -21,48 +21,30 @@ not on selling trading results.
 
 ---
 
+## What This Repository Represents
+
+This repository is used to demonstrate:
+- System architecture & execution flow
+- Automation design patterns
+- Rule-based logic structuring
+- Risk and safety handling concepts
+
+It does **NOT** represent:
+- Live trading systems  
+- Client deployments  
+- Trading performance or profitability  
+
+---
+
 ## System Demonstrations
 
-Below are **internal system demonstrations** built to showcase  
-execution flow, automation quality, and logic structuring.
+Detailed internal system demonstrations are available here:  
+👉 **[System Demonstrations](./System%20Demonstrations)**
 
-> These are **NOT live client systems**  
-> and **do NOT represent performance or profit guarantees**.
-
----
-
-### 1. TradingView → API Execution System (Demo)
-
-Demonstrates:
-- TradingView signal generation  
-- Backend validation & rule checks  
-- Broker API execution flow  
-- Order logging & safety controls  
-
-*(Screenshot / architecture diagram placeholder)*
-
----
-
-### 2. MT5 Rule-Based Expert Advisor (Demo Environment)
-
-Demonstrates:
-- Structured entry & exit rules  
-- Risk management handling  
-- Demo-only execution logic  
-- Safety filters & trade controls  
-
-*(Screenshot placeholder)*
-
----
-
-### 3. TradingView Custom Indicator (Logic Demo)
-
-Demonstrates:
-- Custom condition filtering  
-- Trend & strength validation  
-- Visual trade-state labeling (BUY / EXIT)  
-
-*(Screenshot placeholder)*
+These demos are shared strictly for:
+- Architecture understanding  
+- Logic validation  
+- Automation quality review  
 
 ---
 
@@ -74,9 +56,8 @@ Tools of Tomorrow **does NOT provide**:
 - Fund management  
 - Financial or investment advice  
 
-All projects are created for:
+All work is created for:
 - System development  
-- Logic validation  
 - Automation testing  
 - Research & educational purposes  
 
@@ -85,20 +66,17 @@ based on their specific requirements.
 
 ---
 
-## Sample Project Frameworks
+## GitHub Pages
 
-- EMA-based Trend Logic Systems  
-- Rule-based Scalping & Intraday Structures  
-- Risk-controlled algorithmic modules  
-- Strategy-to-execution automation pipelines  
+A public demonstration page is available here:  
+👉 https://toolsoftomorrow1.github.io/toolsoftomorrow/
 
-*(Project names are representative of logic structure, not live products.)*
+This page highlights system structure and automation flow only.
 
 ---
 
-## GitHub Pages Usage
-
-This repository is used to demonstrate **system architecture and execution flow only**.
+© Tools of Tomorrow
+only**.
 
 Live deployments, proprietary logic, and client-specific systems  
 are **never shared publicly**.
