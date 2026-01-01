@@ -1,4 +1,4 @@
-# Tools of Technologies
+# Tools of Tomorrow
 
 Algorithmic Market Tools & Automation
 
@@ -13,11 +13,11 @@ not on selling trading results.
 ## Focus Areas
 
 - TradingView indicator & strategy logic development  
-- MT5 Expert Advisor development (rule-based automation)
-- API-based execution systems (TradingView → Backend → Broker)
-- Risk-aware system architecture
-- Strategy testing, validation, and optimization frameworks
-- Licensing, access control, and deployment workflows
+- MT5 Expert Advisor development (rule-based automation)  
+- API-based execution systems (TradingView → Backend → Broker)  
+- Risk-aware system architecture  
+- Strategy testing, validation, and optimization frameworks  
+- Licensing, access control, and deployment workflows  
 
 ---
 
@@ -29,32 +29,38 @@ execution flow, automation quality, and logic structuring.
 > These are **NOT live client systems**  
 > and **do NOT represent performance or profit guarantees**.
 
-### 1. TradingView → API Execution System
-Demonstrates:
-- TradingView signal generation
-- Backend validation & rule checks
-- Broker API execution flow
-- Order logging & safety controls
+---
 
-*(Screenshot placeholder)*
+### 1. TradingView → API Execution System (Demo)
+
+Demonstrates:
+- TradingView signal generation  
+- Backend validation & rule checks  
+- Broker API execution flow  
+- Order logging & safety controls  
+
+*(Screenshot / architecture diagram placeholder)*
 
 ---
 
-### 2. MT5 Rule-Based EA (Demo Environment)
+### 2. MT5 Rule-Based Expert Advisor (Demo Environment)
+
 Demonstrates:
-- Structured entry/exit rules
-- Risk management handling
-- Demo-only execution logic
+- Structured entry & exit rules  
+- Risk management handling  
+- Demo-only execution logic  
+- Safety filters & trade controls  
 
 *(Screenshot placeholder)*
 
 ---
 
 ### 3. TradingView Custom Indicator (Logic Demo)
+
 Demonstrates:
-- Custom condition filtering
-- Trend & strength validation
-- Visual trade-state labeling (BUY / EXIT)
+- Custom condition filtering  
+- Trend & strength validation  
+- Visual trade-state labeling (BUY / EXIT)  
 
 *(Screenshot placeholder)*
 
@@ -62,17 +68,17 @@ Demonstrates:
 
 ## Important Notice
 
-Tools of Technologies **does NOT provide**:
-- Trading services
-- Buy/Sell signals
-- Fund management
-- Financial or investment advice
+Tools of Tomorrow **does NOT provide**:
+- Trading services  
+- Buy/Sell signals  
+- Fund management  
+- Financial or investment advice  
 
 All projects are created for:
-- System development
-- Logic validation
-- Automation testing
-- Research & educational purposes
+- System development  
+- Logic validation  
+- Automation testing  
+- Research & educational purposes  
 
 Final implementations are built **privately per client**
 based on their specific requirements.
@@ -90,12 +96,14 @@ based on their specific requirements.
 
 ---
 
-## GitHub Pages
+## GitHub Pages Usage
 
 This repository is used to demonstrate **system architecture and execution flow only**.
 
-Live deployments, proprietary logic, and client-specific systems
+Live deployments, proprietary logic, and client-specific systems  
 are **never shared publicly**.
 
-Official website:  
+---
+
+### Official Website
 👉 https://toolsoftomorrow1.github.io/toolsoftomorrow/
